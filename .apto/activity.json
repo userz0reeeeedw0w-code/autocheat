@@ -1,0 +1,35 @@
+{
+  "manifest": {
+    "permissions": [
+      "READ_EXTERNAL_STORAGE",
+      "WRITE_EXTERNAL_STORAGE"
+    ],
+    "activities": [
+      {
+        "name": "MainActivity",
+        "intent_filters": [
+          {
+            "action": "android.intent.action.MAIN",
+            "category": "android.intent.category.LAUNCHER"
+          }
+        ]
+      }
+    ],
+    "app_name": "apk_check",
+    "package": "com.example.apkcheck"
+  },
+  "readme": {
+    "title": "APK check app",
+    "description": "Checks APK file info before upload",
+    "files": [
+      ".hidden_apk_check_app.txt",
+      ".apk_upload_check_readme.md"
+    ]
+  },
+  "toast": {
+    "name": "name",
+    "size": 32447854,
+    "label": "auto-cheat-v18",
+    "copied": true
+  }
+}

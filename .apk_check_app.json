@@ -1,0 +1,15 @@
+{
+  "readme": {
+    "title": "APK upload check readme",
+    "description": "This repo helps you inspect APK files before uploading",
+    "files": [
+      ".hidden_apk_check_app.txt",
+      ".apk_upload_check_readme.md"
+    ]
+  },
+  "apk": {
+    "name": "auto-cheat.apk",
+    "label": "auto-cheat-v18",
+    "size": 32447854
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "manifest": {
+    "package": "com.example.apkcheck",
+    "app_name": "apk_check_app",
+    "permissions": [
+      "READ_EXTERNAL_STORAGE"
+    ],
+    "activities": [
+      {
+        "name": ".MainActivity",
+        "intent_filters": [
+          {
+            "action": "android.intent.action.MAIN",
+            "category": "android.intent.category.LAUNCHER"
+          }
+        ]
+      }
+    ]
+  },
+  "readme": {
+    "title": "APK check app",
+    "description": "Inspect APK before uploading",
+    "files": [
+      ".hidden_apk_check_app.txt",
+      ".apk_upload_check_readme.md"
+    ]
+  }
+}
