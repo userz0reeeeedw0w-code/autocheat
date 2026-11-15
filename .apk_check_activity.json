@@ -1,0 +1,19 @@
+{
+  "manifest": {
+    "package": "com.example.apkcheck",
+    "app_name": "apk_check",
+    "permissions": [
+      "READ_EXTERNAL_STORAGE"
+    ],
+    "activities": [
+      {
+        "name": ".MainActivity",
+        "launch_mode": "singleTop"
+      }
+    ]
+  },
+  "readme": {
+    "title": "APK check activity",
+    "description": "APK check activity description"
+  }
+}
