@@ -1,0 +1,359 @@
+.class public final Lcom/laki/bonuscollector/auth/VkAuth$TokenResult;
+.super Ljava/lang/Object;
+.source "VkAuth.kt"
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Lcom/laki/bonuscollector/auth/VkAuth;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x19
+    name = "TokenResult"
+.end annotation
+
+.annotation runtime Lkotlin/Metadata;
+    d1 = {
+        "\u0000(\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0000\n\u0002\u0010\u000e\n\u0000\n\u0002\u0010\t\n\u0002\u0008\u000f\n\u0002\u0010\u000b\n\u0002\u0008\u0002\n\u0002\u0010\u0008\n\u0002\u0008\u0002\u0008\u0087\u0008\u0018\u00002\u00020\u0001B#\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u0012\u0008\u0010\u0004\u001a\u0004\u0018\u00010\u0005\u0012\u0008\u0010\u0006\u001a\u0004\u0018\u00010\u0005\u00a2\u0006\u0004\u0008\u0007\u0010\u0008J\t\u0010\u000f\u001a\u00020\u0003H\u00c6\u0003J\u0010\u0010\u0010\u001a\u0004\u0018\u00010\u0005H\u00c6\u0003\u00a2\u0006\u0002\u0010\u000cJ\u0010\u0010\u0011\u001a\u0004\u0018\u00010\u0005H\u00c6\u0003\u00a2\u0006\u0002\u0010\u000cJ0\u0010\u0012\u001a\u00020\u00002\u0008\u0008\u0002\u0010\u0002\u001a\u00020\u00032\n\u0008\u0002\u0010\u0004\u001a\u0004\u0018\u00010\u00052\n\u0008\u0002\u0010\u0006\u001a\u0004\u0018\u00010\u0005H\u00c6\u0001\u00a2\u0006\u0002\u0010\u0013J\u0013\u0010\u0014\u001a\u00020\u00152\u0008\u0010\u0016\u001a\u0004\u0018\u00010\u0001H\u00d6\u0003J\t\u0010\u0017\u001a\u00020\u0018H\u00d6\u0001J\t\u0010\u0019\u001a\u00020\u0003H\u00d6\u0001R\u0011\u0010\u0002\u001a\u00020\u0003\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008\t\u0010\nR\u0015\u0010\u0004\u001a\u0004\u0018\u00010\u0005\u00a2\u0006\n\n\u0002\u0010\r\u001a\u0004\u0008\u000b\u0010\u000cR\u0015\u0010\u0006\u001a\u0004\u0018\u00010\u0005\u00a2\u0006\n\n\u0002\u0010\r\u001a\u0004\u0008\u000e\u0010\u000c\u00a8\u0006\u001a"
+    }
+    d2 = {
+        "Lcom/laki/bonuscollector/auth/VkAuth$TokenResult;",
+        "",
+        "token",
+        "",
+        "userId",
+        "",
+        "expiresIn",
+        "<init>",
+        "(Ljava/lang/String;Ljava/lang/Long;Ljava/lang/Long;)V",
+        "getToken",
+        "()Ljava/lang/String;",
+        "getUserId",
+        "()Ljava/lang/Long;",
+        "Ljava/lang/Long;",
+        "getExpiresIn",
+        "component1",
+        "component2",
+        "component3",
+        "copy",
+        "(Ljava/lang/String;Ljava/lang/Long;Ljava/lang/Long;)Lcom/laki/bonuscollector/auth/VkAuth$TokenResult;",
+        "equals",
+        "",
+        "other",
+        "hashCode",
+        "",
+        "toString",
+        "app_release"
+    }
+    k = 0x1
+    mv = {
+        0x2,
+        0x0,
+        0x0
+    }
+    xi = 0x30
+.end annotation
+
+
+# static fields
+.field public static final $stable:I
+
+
+# instance fields
+.field private final expiresIn:Ljava/lang/Long;
+
+.field private final token:Ljava/lang/String;
+
+.field private final userId:Ljava/lang/Long;
+
+
+# direct methods
+.method static constructor <clinit>()V
+    .registers 0
+
+    return-void
+.end method
+
+.method public constructor <init>(Ljava/lang/String;Ljava/lang/Long;Ljava/lang/Long;)V
+    .registers 5
+
+    const-string v0, "token"
+
+    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+
+    .line 29
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 30
+    iput-object p1, p0, Lcom/laki/bonuscollector/auth/VkAuth$TokenResult;->token:Ljava/lang/String;
+
+    .line 31
+    iput-object p2, p0, Lcom/laki/bonuscollector/auth/VkAuth$TokenResult;->userId:Ljava/lang/Long;
+
+    .line 32
+    iput-object p3, p0, Lcom/laki/bonuscollector/auth/VkAuth$TokenResult;->expiresIn:Ljava/lang/Long;
+
+    return-void
+.end method
+
+.method public static synthetic copy$default(Lcom/laki/bonuscollector/auth/VkAuth$TokenResult;Ljava/lang/String;Ljava/lang/Long;Ljava/lang/Long;ILjava/lang/Object;)Lcom/laki/bonuscollector/auth/VkAuth$TokenResult;
+    .registers 6
+
+    and-int/lit8 p5, p4, 0x1
+
+    if-eqz p5, :cond_6
+
+    iget-object p1, p0, Lcom/laki/bonuscollector/auth/VkAuth$TokenResult;->token:Ljava/lang/String;
+
+    :cond_6
+    and-int/lit8 p5, p4, 0x2
+
+    if-eqz p5, :cond_c
+
+    iget-object p2, p0, Lcom/laki/bonuscollector/auth/VkAuth$TokenResult;->userId:Ljava/lang/Long;
+
+    :cond_c
+    and-int/lit8 p4, p4, 0x4
+
+    if-eqz p4, :cond_12
+
+    iget-object p3, p0, Lcom/laki/bonuscollector/auth/VkAuth$TokenResult;->expiresIn:Ljava/lang/Long;
+
+    :cond_12
+    invoke-virtual {p0, p1, p2, p3}, Lcom/laki/bonuscollector/auth/VkAuth$TokenResult;->copy(Ljava/lang/String;Ljava/lang/Long;Ljava/lang/Long;)Lcom/laki/bonuscollector/auth/VkAuth$TokenResult;
+
+    move-result-object p0
+
+    return-object p0
+.end method
+
+
+# virtual methods
+.method public final component1()Ljava/lang/String;
+    .registers 2
+
+    iget-object v0, p0, Lcom/laki/bonuscollector/auth/VkAuth$TokenResult;->token:Ljava/lang/String;
+
+    return-object v0
+.end method
+
+.method public final component2()Ljava/lang/Long;
+    .registers 2
+
+    iget-object v0, p0, Lcom/laki/bonuscollector/auth/VkAuth$TokenResult;->userId:Ljava/lang/Long;
+
+    return-object v0
+.end method
+
+.method public final component3()Ljava/lang/Long;
+    .registers 2
+
+    iget-object v0, p0, Lcom/laki/bonuscollector/auth/VkAuth$TokenResult;->expiresIn:Ljava/lang/Long;
+
+    return-object v0
+.end method
+
+.method public final copy(Ljava/lang/String;Ljava/lang/Long;Ljava/lang/Long;)Lcom/laki/bonuscollector/auth/VkAuth$TokenResult;
+    .registers 5
+
+    const-string v0, "token"
+
+    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkNotNullParameter(Ljava/lang/Object;Ljava/lang/String;)V
+
+    new-instance v0, Lcom/laki/bonuscollector/auth/VkAuth$TokenResult;
+
+    invoke-direct {v0, p1, p2, p3}, Lcom/laki/bonuscollector/auth/VkAuth$TokenResult;-><init>(Ljava/lang/String;Ljava/lang/Long;Ljava/lang/Long;)V
+
+    return-object v0
+.end method
+
+.method public equals(Ljava/lang/Object;)Z
+    .registers 6
+
+    const/4 v0, 0x1
+
+    if-ne p0, p1, :cond_4
+
+    return v0
+
+    :cond_4
+    instance-of v1, p1, Lcom/laki/bonuscollector/auth/VkAuth$TokenResult;
+
+    const/4 v2, 0x0
+
+    if-nez v1, :cond_a
+
+    return v2
+
+    :cond_a
+    check-cast p1, Lcom/laki/bonuscollector/auth/VkAuth$TokenResult;
+
+    iget-object v1, p0, Lcom/laki/bonuscollector/auth/VkAuth$TokenResult;->token:Ljava/lang/String;
+
+    iget-object v3, p1, Lcom/laki/bonuscollector/auth/VkAuth$TokenResult;->token:Ljava/lang/String;
+
+    invoke-static {v1, v3}, Lkotlin/jvm/internal/Intrinsics;->areEqual(Ljava/lang/Object;Ljava/lang/Object;)Z
+
+    move-result v1
+
+    if-nez v1, :cond_17
+
+    return v2
+
+    :cond_17
+    iget-object v1, p0, Lcom/laki/bonuscollector/auth/VkAuth$TokenResult;->userId:Ljava/lang/Long;
+
+    iget-object v3, p1, Lcom/laki/bonuscollector/auth/VkAuth$TokenResult;->userId:Ljava/lang/Long;
+
+    invoke-static {v1, v3}, Lkotlin/jvm/internal/Intrinsics;->areEqual(Ljava/lang/Object;Ljava/lang/Object;)Z
+
+    move-result v1
+
+    if-nez v1, :cond_22
+
+    return v2
+
+    :cond_22
+    iget-object v1, p0, Lcom/laki/bonuscollector/auth/VkAuth$TokenResult;->expiresIn:Ljava/lang/Long;
+
+    iget-object p1, p1, Lcom/laki/bonuscollector/auth/VkAuth$TokenResult;->expiresIn:Ljava/lang/Long;
+
+    invoke-static {v1, p1}, Lkotlin/jvm/internal/Intrinsics;->areEqual(Ljava/lang/Object;Ljava/lang/Object;)Z
+
+    move-result p1
+
+    if-nez p1, :cond_2d
+
+    return v2
+
+    :cond_2d
+    return v0
+.end method
+
+.method public final getExpiresIn()Ljava/lang/Long;
+    .registers 2
+
+    .line 32
+    iget-object v0, p0, Lcom/laki/bonuscollector/auth/VkAuth$TokenResult;->expiresIn:Ljava/lang/Long;
+
+    return-object v0
+.end method
+
+.method public final getToken()Ljava/lang/String;
+    .registers 2
+
+    .line 30
+    iget-object v0, p0, Lcom/laki/bonuscollector/auth/VkAuth$TokenResult;->token:Ljava/lang/String;
+
+    return-object v0
+.end method
+
+.method public final getUserId()Ljava/lang/Long;
+    .registers 2
+
+    .line 31
+    iget-object v0, p0, Lcom/laki/bonuscollector/auth/VkAuth$TokenResult;->userId:Ljava/lang/Long;
+
+    return-object v0
+.end method
+
+.method public hashCode()I
+    .registers 4
+
+    iget-object v0, p0, Lcom/laki/bonuscollector/auth/VkAuth$TokenResult;->token:Ljava/lang/String;
+
+    invoke-virtual {v0}, Ljava/lang/String;->hashCode()I
+
+    move-result v0
+
+    mul-int/lit8 v0, v0, 0x1f
+
+    iget-object v1, p0, Lcom/laki/bonuscollector/auth/VkAuth$TokenResult;->userId:Ljava/lang/Long;
+
+    const/4 v2, 0x0
+
+    if-nez v1, :cond_f
+
+    move v1, v2
+
+    goto :goto_13
+
+    :cond_f
+    invoke-virtual {v1}, Ljava/lang/Object;->hashCode()I
+
+    move-result v1
+
+    :goto_13
+    add-int/2addr v0, v1
+
+    mul-int/lit8 v0, v0, 0x1f
+
+    iget-object v1, p0, Lcom/laki/bonuscollector/auth/VkAuth$TokenResult;->expiresIn:Ljava/lang/Long;
+
+    if-nez v1, :cond_1b
+
+    goto :goto_1f
+
+    :cond_1b
+    invoke-virtual {v1}, Ljava/lang/Object;->hashCode()I
+
+    move-result v2
+
+    :goto_1f
+    add-int/2addr v0, v2
+
+    return v0
+.end method
+
+.method public toString()Ljava/lang/String;
+    .registers 6
+
+    iget-object v0, p0, Lcom/laki/bonuscollector/auth/VkAuth$TokenResult;->token:Ljava/lang/String;
+
+    iget-object v1, p0, Lcom/laki/bonuscollector/auth/VkAuth$TokenResult;->userId:Ljava/lang/Long;
+
+    iget-object v2, p0, Lcom/laki/bonuscollector/auth/VkAuth$TokenResult;->expiresIn:Ljava/lang/Long;
+
+    new-instance v3, Ljava/lang/StringBuilder;
+
+    const-string v4, "TokenResult(token="
+
+    invoke-direct {v3, v4}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+
+    invoke-virtual {v3, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v0
+
+    const-string v3, ", userId="
+
+    invoke-virtual {v0, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v0
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    move-result-object v0
+
+    const-string v1, ", expiresIn="
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v0
+
+    invoke-virtual {v0, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    move-result-object v0
+
+    const-string v1, ")"
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v0
+
+    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v0
+
+    return-object v0
+.end method

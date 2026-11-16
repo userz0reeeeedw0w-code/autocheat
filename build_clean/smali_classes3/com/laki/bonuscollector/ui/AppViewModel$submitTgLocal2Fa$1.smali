@@ -1,0 +1,821 @@
+.class final Lcom/laki/bonuscollector/ui/AppViewModel$submitTgLocal2Fa$1;
+.super Lkotlin/coroutines/jvm/internal/SuspendLambda;
+.source "AppViewModel.kt"
+
+# interfaces
+.implements Lkotlin/jvm/functions/Function1;
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingMethod;
+    value = Lcom/laki/bonuscollector/ui/AppViewModel;->submitTgLocal2Fa(Ljava/lang/String;)V
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x18
+    name = null
+.end annotation
+
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "Lkotlin/coroutines/jvm/internal/SuspendLambda;",
+        "Lkotlin/jvm/functions/Function1<",
+        "Lkotlin/coroutines/Continuation<",
+        "-",
+        "Lkotlin/Unit;",
+        ">;",
+        "Ljava/lang/Object;",
+        ">;"
+    }
+.end annotation
+
+.annotation runtime Lkotlin/Metadata;
+    d1 = {
+        "\u0000\u0006\n\u0000\n\u0002\u0010\u0002\u0010\u0000\u001a\u00020\u0001H\n"
+    }
+    d2 = {
+        "<anonymous>",
+        ""
+    }
+    k = 0x3
+    mv = {
+        0x2,
+        0x0,
+        0x0
+    }
+    xi = 0x30
+.end annotation
+
+.annotation runtime Lkotlin/coroutines/jvm/internal/DebugMetadata;
+    c = "com.laki.bonuscollector.ui.AppViewModel$submitTgLocal2Fa$1"
+    f = "AppViewModel.kt"
+    i = {
+        0x0,
+        0x0,
+        0x1,
+        0x1,
+        0x1,
+        0x1,
+        0x2,
+        0x2,
+        0x3
+    }
+    l = {
+        0x38b,
+        0x39b,
+        0x39e,
+        0x39f,
+        0x3a5
+    }
+    m = "invokeSuspend"
+    n = {
+        "accountId",
+        "tg",
+        "accountId",
+        "tg",
+        "sessionString",
+        "id",
+        "accountId",
+        "id",
+        "id"
+    }
+    s = {
+        "L$0",
+        "L$1",
+        "L$0",
+        "L$1",
+        "L$2",
+        "L$3",
+        "L$0",
+        "L$1",
+        "L$0"
+    }
+.end annotation
+
+
+# instance fields
+.field final synthetic $password:Ljava/lang/String;
+
+.field L$0:Ljava/lang/Object;
+
+.field L$1:Ljava/lang/Object;
+
+.field L$2:Ljava/lang/Object;
+
+.field L$3:Ljava/lang/Object;
+
+.field label:I
+
+.field final synthetic this$0:Lcom/laki/bonuscollector/ui/AppViewModel;
+
+
+# direct methods
+.method constructor <init>(Lcom/laki/bonuscollector/ui/AppViewModel;Ljava/lang/String;Lkotlin/coroutines/Continuation;)V
+    .registers 4
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Lcom/laki/bonuscollector/ui/AppViewModel;",
+            "Ljava/lang/String;",
+            "Lkotlin/coroutines/Continuation<",
+            "-",
+            "Lcom/laki/bonuscollector/ui/AppViewModel$submitTgLocal2Fa$1;",
+            ">;)V"
+        }
+    .end annotation
+
+    iput-object p1, p0, Lcom/laki/bonuscollector/ui/AppViewModel$submitTgLocal2Fa$1;->this$0:Lcom/laki/bonuscollector/ui/AppViewModel;
+
+    iput-object p2, p0, Lcom/laki/bonuscollector/ui/AppViewModel$submitTgLocal2Fa$1;->$password:Ljava/lang/String;
+
+    const/4 p1, 0x1
+
+    invoke-direct {p0, p1, p3}, Lkotlin/coroutines/jvm/internal/SuspendLambda;-><init>(ILkotlin/coroutines/Continuation;)V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public final create(Lkotlin/coroutines/Continuation;)Lkotlin/coroutines/Continuation;
+    .registers 5
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Lkotlin/coroutines/Continuation<",
+            "*>;)",
+            "Lkotlin/coroutines/Continuation<",
+            "Lkotlin/Unit;",
+            ">;"
+        }
+    .end annotation
+
+    new-instance v0, Lcom/laki/bonuscollector/ui/AppViewModel$submitTgLocal2Fa$1;
+
+    iget-object v1, p0, Lcom/laki/bonuscollector/ui/AppViewModel$submitTgLocal2Fa$1;->this$0:Lcom/laki/bonuscollector/ui/AppViewModel;
+
+    iget-object v2, p0, Lcom/laki/bonuscollector/ui/AppViewModel$submitTgLocal2Fa$1;->$password:Ljava/lang/String;
+
+    invoke-direct {v0, v1, v2, p1}, Lcom/laki/bonuscollector/ui/AppViewModel$submitTgLocal2Fa$1;-><init>(Lcom/laki/bonuscollector/ui/AppViewModel;Ljava/lang/String;Lkotlin/coroutines/Continuation;)V
+
+    check-cast v0, Lkotlin/coroutines/Continuation;
+
+    return-object v0
+.end method
+
+.method public bridge synthetic invoke(Ljava/lang/Object;)Ljava/lang/Object;
+    .registers 2
+
+    check-cast p1, Lkotlin/coroutines/Continuation;
+
+    invoke-virtual {p0, p1}, Lcom/laki/bonuscollector/ui/AppViewModel$submitTgLocal2Fa$1;->invoke(Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
+
+    move-result-object p1
+
+    return-object p1
+.end method
+
+.method public final invoke(Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
+    .registers 3
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Lkotlin/coroutines/Continuation<",
+            "-",
+            "Lkotlin/Unit;",
+            ">;)",
+            "Ljava/lang/Object;"
+        }
+    .end annotation
+
+    invoke-virtual {p0, p1}, Lcom/laki/bonuscollector/ui/AppViewModel$submitTgLocal2Fa$1;->create(Lkotlin/coroutines/Continuation;)Lkotlin/coroutines/Continuation;
+
+    move-result-object p1
+
+    check-cast p1, Lcom/laki/bonuscollector/ui/AppViewModel$submitTgLocal2Fa$1;
+
+    sget-object v0, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;
+
+    invoke-virtual {p1, v0}, Lcom/laki/bonuscollector/ui/AppViewModel$submitTgLocal2Fa$1;->invokeSuspend(Ljava/lang/Object;)Ljava/lang/Object;
+
+    move-result-object p1
+
+    return-object p1
+.end method
+
+.method public final invokeSuspend(Ljava/lang/Object;)Ljava/lang/Object;
+    .registers 30
+
+    move-object/from16 v0, p0
+
+    invoke-static {}, Lkotlin/coroutines/intrinsics/IntrinsicsKt;->getCOROUTINE_SUSPENDED()Ljava/lang/Object;
+
+    move-result-object v1
+
+    .line 904
+    iget v2, v0, Lcom/laki/bonuscollector/ui/AppViewModel$submitTgLocal2Fa$1;->label:I
+
+    const-string v3, ""
+
+    const/4 v4, 0x5
+
+    const/4 v5, 0x4
+
+    const/4 v6, 0x3
+
+    const/4 v7, 0x2
+
+    const/4 v8, 0x1
+
+    const/4 v9, 0x0
+
+    if-eqz v2, :cond_6a
+
+    if-eq v2, v8, :cond_56
+
+    if-eq v2, v7, :cond_3f
+
+    if-eq v2, v6, :cond_32
+
+    if-eq v2, v5, :cond_29
+
+    if-ne v2, v4, :cond_21
+
+    invoke-static/range {p1 .. p1}, Lkotlin/ResultKt;->throwOnFailure(Ljava/lang/Object;)V
+
+    goto/16 :goto_215
+
+    :cond_21
+    new-instance v1, Ljava/lang/IllegalStateException;
+
+    const-string v2, "call to \'resume\' before \'invoke\' with coroutine"
+
+    invoke-direct {v1, v2}, Ljava/lang/IllegalStateException;-><init>(Ljava/lang/String;)V
+
+    throw v1
+
+    :cond_29
+    iget-object v2, v0, Lcom/laki/bonuscollector/ui/AppViewModel$submitTgLocal2Fa$1;->L$0:Ljava/lang/Object;
+
+    check-cast v2, Ljava/lang/String;
+
+    invoke-static/range {p1 .. p1}, Lkotlin/ResultKt;->throwOnFailure(Ljava/lang/Object;)V
+
+    goto/16 :goto_18d
+
+    :cond_32
+    iget-object v2, v0, Lcom/laki/bonuscollector/ui/AppViewModel$submitTgLocal2Fa$1;->L$1:Ljava/lang/Object;
+
+    check-cast v2, Ljava/lang/String;
+
+    iget-object v6, v0, Lcom/laki/bonuscollector/ui/AppViewModel$submitTgLocal2Fa$1;->L$0:Ljava/lang/Object;
+
+    check-cast v6, Ljava/lang/String;
+
+    invoke-static/range {p1 .. p1}, Lkotlin/ResultKt;->throwOnFailure(Ljava/lang/Object;)V
+
+    goto/16 :goto_173
+
+    :cond_3f
+    iget-object v2, v0, Lcom/laki/bonuscollector/ui/AppViewModel$submitTgLocal2Fa$1;->L$3:Ljava/lang/Object;
+
+    check-cast v2, Ljava/lang/String;
+
+    iget-object v7, v0, Lcom/laki/bonuscollector/ui/AppViewModel$submitTgLocal2Fa$1;->L$2:Ljava/lang/Object;
+
+    check-cast v7, Ljava/lang/String;
+
+    iget-object v10, v0, Lcom/laki/bonuscollector/ui/AppViewModel$submitTgLocal2Fa$1;->L$1:Ljava/lang/Object;
+
+    check-cast v10, Lcom/laki/bonuscollector/auth/TgMtAuth;
+
+    iget-object v11, v0, Lcom/laki/bonuscollector/ui/AppViewModel$submitTgLocal2Fa$1;->L$0:Ljava/lang/Object;
+
+    check-cast v11, Ljava/lang/String;
+
+    invoke-static/range {p1 .. p1}, Lkotlin/ResultKt;->throwOnFailure(Ljava/lang/Object;)V
+
+    move-object v4, v10
+
+    move-object v10, v11
+
+    goto/16 :goto_13e
+
+    :cond_56
+    iget-object v2, v0, Lcom/laki/bonuscollector/ui/AppViewModel$submitTgLocal2Fa$1;->L$1:Ljava/lang/Object;
+
+    check-cast v2, Lcom/laki/bonuscollector/auth/TgMtAuth;
+
+    iget-object v10, v0, Lcom/laki/bonuscollector/ui/AppViewModel$submitTgLocal2Fa$1;->L$0:Ljava/lang/Object;
+
+    check-cast v10, Ljava/lang/String;
+
+    invoke-static/range {p1 .. p1}, Lkotlin/ResultKt;->throwOnFailure(Ljava/lang/Object;)V
+
+    move-object/from16 v11, p1
+
+    check-cast v11, Lkotlin/Result;
+
+    invoke-virtual {v11}, Lkotlin/Result;->unbox-impl()Ljava/lang/Object;
+
+    move-result-object v11
+
+    goto :goto_a6
+
+    :cond_6a
+    invoke-static/range {p1 .. p1}, Lkotlin/ResultKt;->throwOnFailure(Ljava/lang/Object;)V
+
+    .line 905
+    iget-object v2, v0, Lcom/laki/bonuscollector/ui/AppViewModel$submitTgLocal2Fa$1;->this$0:Lcom/laki/bonuscollector/ui/AppViewModel;
+
+    # getter for: Lcom/laki/bonuscollector/ui/AppViewModel;->_tgAccountId:Lkotlinx/coroutines/flow/MutableStateFlow;
+    invoke-static {v2}, Lcom/laki/bonuscollector/ui/AppViewModel;->access$get_tgAccountId$p(Lcom/laki/bonuscollector/ui/AppViewModel;)Lkotlinx/coroutines/flow/MutableStateFlow;
+
+    move-result-object v2
+
+    invoke-interface {v2}, Lkotlinx/coroutines/flow/MutableStateFlow;->getValue()Ljava/lang/Object;
+
+    move-result-object v2
+
+    move-object v10, v2
+
+    check-cast v10, Ljava/lang/String;
+
+    if-nez v10, :cond_86
+
+    iget-object v1, v0, Lcom/laki/bonuscollector/ui/AppViewModel$submitTgLocal2Fa$1;->this$0:Lcom/laki/bonuscollector/ui/AppViewModel;
+
+    const-string v2, "\u0421\u0435\u0441\u0441\u0438\u044f \u0432\u0445\u043e\u0434\u0430 \u0443\u0442\u0435\u0440\u044f\u043d\u0430"
+
+    invoke-virtual {v1, v2}, Lcom/laki/bonuscollector/ui/AppViewModel;->notice(Ljava/lang/String;)V
+
+    sget-object v1, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;
+
+    return-object v1
+
+    .line 906
+    :cond_86
+    iget-object v2, v0, Lcom/laki/bonuscollector/ui/AppViewModel$submitTgLocal2Fa$1;->this$0:Lcom/laki/bonuscollector/ui/AppViewModel;
+
+    invoke-virtual {v2}, Lcom/laki/bonuscollector/ui/AppViewModel;->getGraph()Lcom/laki/bonuscollector/AppGraph;
+
+    move-result-object v2
+
+    invoke-virtual {v2}, Lcom/laki/bonuscollector/AppGraph;->getAccounts()Lcom/laki/bonuscollector/data/AccountsRepository;
+
+    move-result-object v2
+
+    invoke-virtual {v2, v10}, Lcom/laki/bonuscollector/data/AccountsRepository;->tgAuth(Ljava/lang/String;)Lcom/laki/bonuscollector/auth/TgMtAuth;
+
+    move-result-object v2
+
+    .line 907
+    iget-object v11, v0, Lcom/laki/bonuscollector/ui/AppViewModel$submitTgLocal2Fa$1;->$password:Ljava/lang/String;
+
+    move-object v12, v0
+
+    check-cast v12, Lkotlin/coroutines/Continuation;
+
+    iput-object v10, v0, Lcom/laki/bonuscollector/ui/AppViewModel$submitTgLocal2Fa$1;->L$0:Ljava/lang/Object;
+
+    iput-object v2, v0, Lcom/laki/bonuscollector/ui/AppViewModel$submitTgLocal2Fa$1;->L$1:Ljava/lang/Object;
+
+    iput v8, v0, Lcom/laki/bonuscollector/ui/AppViewModel$submitTgLocal2Fa$1;->label:I
+
+    invoke-virtual {v2, v11, v12}, Lcom/laki/bonuscollector/auth/TgMtAuth;->submit2Fa-gIAlu-s(Ljava/lang/String;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
+
+    move-result-object v11
+
+    if-ne v11, v1, :cond_a6
+
+    return-object v1
+
+    .line 908
+    :cond_a6
+    :goto_a6
+    invoke-static {v11}, Lkotlin/Result;->isSuccess-impl(Ljava/lang/Object;)Z
+
+    move-result v12
+
+    if-eqz v12, :cond_1ed
+
+    .line 909
+    invoke-static {v11}, Lkotlin/Result;->isFailure-impl(Ljava/lang/Object;)Z
+
+    move-result v12
+
+    if-eqz v12, :cond_b3
+
+    move-object v11, v9
+
+    :cond_b3
+    check-cast v11, Ljava/lang/String;
+
+    if-eqz v11, :cond_1c8
+
+    .line 910
+    move-object v12, v11
+
+    check-cast v12, Ljava/lang/CharSequence;
+
+    invoke-static {v12}, Lkotlin/text/StringsKt;->isBlank(Ljava/lang/CharSequence;)Z
+
+    move-result v12
+
+    xor-int/2addr v12, v8
+
+    if-eqz v12, :cond_1c8
+
+    .line 911
+    invoke-static {}, Ljava/lang/System;->currentTimeMillis()J
+
+    move-result-wide v12
+
+    new-instance v14, Ljava/lang/StringBuilder;
+
+    const-string v15, "tg_"
+
+    invoke-direct {v14, v15}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+
+    invoke-virtual {v14, v12, v13}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
+
+    move-result-object v12
+
+    invoke-virtual {v12}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v12
+
+    .line 912
+    new-instance v15, Lcom/laki/bonuscollector/core/Account;
+
+    .line 914
+    sget-object v16, Lcom/laki/bonuscollector/core/Platform;->TELEGRAM:Lcom/laki/bonuscollector/core/Platform;
+
+    .line 915
+    iget-object v13, v0, Lcom/laki/bonuscollector/ui/AppViewModel$submitTgLocal2Fa$1;->this$0:Lcom/laki/bonuscollector/ui/AppViewModel;
+
+    # getter for: Lcom/laki/bonuscollector/ui/AppViewModel;->_tgPhone:Lkotlinx/coroutines/flow/MutableStateFlow;
+    invoke-static {v13}, Lcom/laki/bonuscollector/ui/AppViewModel;->access$get_tgPhone$p(Lcom/laki/bonuscollector/ui/AppViewModel;)Lkotlinx/coroutines/flow/MutableStateFlow;
+
+    move-result-object v14
+
+    invoke-interface {v14}, Lkotlinx/coroutines/flow/MutableStateFlow;->getValue()Ljava/lang/Object;
+
+    move-result-object v14
+
+    check-cast v14, Ljava/lang/String;
+
+    # invokes: Lcom/laki/bonuscollector/ui/AppViewModel;->maskPhone(Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v13, v14}, Lcom/laki/bonuscollector/ui/AppViewModel;->access$maskPhone(Lcom/laki/bonuscollector/ui/AppViewModel;Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v13
+
+    new-instance v14, Ljava/lang/StringBuilder;
+
+    const-string v8, "Telegram ("
+
+    invoke-direct {v14, v8}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+
+    invoke-virtual {v14, v13}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v8
+
+    const-string v13, ")"
+
+    invoke-virtual {v8, v13}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v8
+
+    invoke-virtual {v8}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v8
+
+    .line 918
+    sget-object v19, Lcom/laki/bonuscollector/core/AccountStatus;->CONNECTED:Lcom/laki/bonuscollector/core/AccountStatus;
+
+    .line 919
+    invoke-static {}, Ljava/lang/System;->currentTimeMillis()J
+
+    move-result-wide v20
+
+    .line 920
+    invoke-static {}, Ljava/lang/System;->currentTimeMillis()J
+
+    move-result-wide v22
+
+    const/16 v26, 0x100
+
+    const/16 v27, 0x0
+
+    const/16 v17, 0x0
+
+    .line 912
+    const-string v18, "MTProto (\u043d\u043e\u043c\u0435\u0440 \u2192 \u043a\u043e\u0434 \u2192 2FA)"
+
+    const/16 v24, 0x0
+
+    const/16 v25, 0x1
+
+    move-object v13, v15
+
+    move-object v14, v12
+
+    move-object v4, v15
+
+    move-object/from16 v15, v16
+
+    move-object/from16 v16, v8
+
+    invoke-direct/range {v13 .. v27}, Lcom/laki/bonuscollector/core/Account;-><init>(Ljava/lang/String;Lcom/laki/bonuscollector/core/Platform;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Lcom/laki/bonuscollector/core/AccountStatus;JJLjava/lang/String;ZILkotlin/jvm/internal/DefaultConstructorMarker;)V
+
+    .line 923
+    iget-object v8, v0, Lcom/laki/bonuscollector/ui/AppViewModel$submitTgLocal2Fa$1;->this$0:Lcom/laki/bonuscollector/ui/AppViewModel;
+
+    invoke-virtual {v8}, Lcom/laki/bonuscollector/ui/AppViewModel;->getGraph()Lcom/laki/bonuscollector/AppGraph;
+
+    move-result-object v8
+
+    invoke-virtual {v8}, Lcom/laki/bonuscollector/AppGraph;->getAccounts()Lcom/laki/bonuscollector/data/AccountsRepository;
+
+    move-result-object v8
+
+    move-object v13, v0
+
+    check-cast v13, Lkotlin/coroutines/Continuation;
+
+    iput-object v10, v0, Lcom/laki/bonuscollector/ui/AppViewModel$submitTgLocal2Fa$1;->L$0:Ljava/lang/Object;
+
+    iput-object v2, v0, Lcom/laki/bonuscollector/ui/AppViewModel$submitTgLocal2Fa$1;->L$1:Ljava/lang/Object;
+
+    iput-object v11, v0, Lcom/laki/bonuscollector/ui/AppViewModel$submitTgLocal2Fa$1;->L$2:Ljava/lang/Object;
+
+    iput-object v12, v0, Lcom/laki/bonuscollector/ui/AppViewModel$submitTgLocal2Fa$1;->L$3:Ljava/lang/Object;
+
+    iput v7, v0, Lcom/laki/bonuscollector/ui/AppViewModel$submitTgLocal2Fa$1;->label:I
+
+    invoke-virtual {v8, v4, v13}, Lcom/laki/bonuscollector/data/AccountsRepository;->saveAccount(Lcom/laki/bonuscollector/core/Account;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
+
+    move-result-object v4
+
+    if-ne v4, v1, :cond_13b
+
+    return-object v1
+
+    :cond_13b
+    move-object v4, v2
+
+    move-object v7, v11
+
+    move-object v2, v12
+
+    .line 924
+    :goto_13e
+    iget-object v8, v0, Lcom/laki/bonuscollector/ui/AppViewModel$submitTgLocal2Fa$1;->this$0:Lcom/laki/bonuscollector/ui/AppViewModel;
+
+    invoke-virtual {v8}, Lcom/laki/bonuscollector/ui/AppViewModel;->getGraph()Lcom/laki/bonuscollector/AppGraph;
+
+    move-result-object v8
+
+    invoke-virtual {v8}, Lcom/laki/bonuscollector/AppGraph;->getSecureStore()Lcom/laki/bonuscollector/security/SecureStore;
+
+    move-result-object v8
+
+    sget-object v11, Lcom/laki/bonuscollector/security/SecureStore;->Companion:Lcom/laki/bonuscollector/security/SecureStore$Companion;
+
+    invoke-virtual {v11, v2}, Lcom/laki/bonuscollector/security/SecureStore$Companion;->tgSessionKey(Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v11
+
+    invoke-virtual {v8, v11, v7}, Lcom/laki/bonuscollector/security/SecureStore;->put(Ljava/lang/String;Ljava/lang/String;)V
+
+    .line 925
+    invoke-virtual {v4, v7}, Lcom/laki/bonuscollector/auth/TgMtAuth;->setSession(Ljava/lang/String;)V
+
+    .line 926
+    iget-object v4, v0, Lcom/laki/bonuscollector/ui/AppViewModel$submitTgLocal2Fa$1;->this$0:Lcom/laki/bonuscollector/ui/AppViewModel;
+
+    invoke-virtual {v4}, Lcom/laki/bonuscollector/ui/AppViewModel;->getGraph()Lcom/laki/bonuscollector/AppGraph;
+
+    move-result-object v4
+
+    invoke-virtual {v4}, Lcom/laki/bonuscollector/AppGraph;->getAccounts()Lcom/laki/bonuscollector/data/AccountsRepository;
+
+    move-result-object v4
+
+    move-object v7, v0
+
+    check-cast v7, Lkotlin/coroutines/Continuation;
+
+    iput-object v10, v0, Lcom/laki/bonuscollector/ui/AppViewModel$submitTgLocal2Fa$1;->L$0:Ljava/lang/Object;
+
+    iput-object v2, v0, Lcom/laki/bonuscollector/ui/AppViewModel$submitTgLocal2Fa$1;->L$1:Ljava/lang/Object;
+
+    iput-object v9, v0, Lcom/laki/bonuscollector/ui/AppViewModel$submitTgLocal2Fa$1;->L$2:Ljava/lang/Object;
+
+    iput-object v9, v0, Lcom/laki/bonuscollector/ui/AppViewModel$submitTgLocal2Fa$1;->L$3:Ljava/lang/Object;
+
+    iput v6, v0, Lcom/laki/bonuscollector/ui/AppViewModel$submitTgLocal2Fa$1;->label:I
+
+    invoke-virtual {v4, v7}, Lcom/laki/bonuscollector/data/AccountsRepository;->loadAccounts(Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
+
+    move-result-object v4
+
+    if-ne v4, v1, :cond_172
+
+    return-object v1
+
+    :cond_172
+    move-object v6, v10
+
+    .line 927
+    :goto_173
+    iget-object v4, v0, Lcom/laki/bonuscollector/ui/AppViewModel$submitTgLocal2Fa$1;->this$0:Lcom/laki/bonuscollector/ui/AppViewModel;
+
+    invoke-virtual {v4}, Lcom/laki/bonuscollector/ui/AppViewModel;->getGraph()Lcom/laki/bonuscollector/AppGraph;
+
+    move-result-object v4
+
+    invoke-virtual {v4}, Lcom/laki/bonuscollector/AppGraph;->getAccounts()Lcom/laki/bonuscollector/data/AccountsRepository;
+
+    move-result-object v4
+
+    move-object v7, v0
+
+    check-cast v7, Lkotlin/coroutines/Continuation;
+
+    iput-object v2, v0, Lcom/laki/bonuscollector/ui/AppViewModel$submitTgLocal2Fa$1;->L$0:Ljava/lang/Object;
+
+    iput-object v9, v0, Lcom/laki/bonuscollector/ui/AppViewModel$submitTgLocal2Fa$1;->L$1:Ljava/lang/Object;
+
+    iput v5, v0, Lcom/laki/bonuscollector/ui/AppViewModel$submitTgLocal2Fa$1;->label:I
+
+    invoke-virtual {v4, v6, v7}, Lcom/laki/bonuscollector/data/AccountsRepository;->discardAuth(Ljava/lang/String;Lkotlin/coroutines/Continuation;)Ljava/lang/Object;
+
+    move-result-object v4
+
+    if-ne v4, v1, :cond_18d
+
+    return-object v1
+
+    .line 928
+    :cond_18d
+    :goto_18d
+    iget-object v4, v0, Lcom/laki/bonuscollector/ui/AppViewModel$submitTgLocal2Fa$1;->this$0:Lcom/laki/bonuscollector/ui/AppViewModel;
+
+    invoke-virtual {v4, v2}, Lcom/laki/bonuscollector/ui/AppViewModel;->selectAccount(Ljava/lang/String;)V
+
+    .line 929
+    iget-object v2, v0, Lcom/laki/bonuscollector/ui/AppViewModel$submitTgLocal2Fa$1;->this$0:Lcom/laki/bonuscollector/ui/AppViewModel;
+
+    # getter for: Lcom/laki/bonuscollector/ui/AppViewModel;->_tgAuthStep:Lkotlinx/coroutines/flow/MutableStateFlow;
+    invoke-static {v2}, Lcom/laki/bonuscollector/ui/AppViewModel;->access$get_tgAuthStep$p(Lcom/laki/bonuscollector/ui/AppViewModel;)Lkotlinx/coroutines/flow/MutableStateFlow;
+
+    move-result-object v2
+
+    sget-object v4, Lcom/laki/bonuscollector/auth/TgAuthStep;->None:Lcom/laki/bonuscollector/auth/TgAuthStep;
+
+    invoke-interface {v2, v4}, Lkotlinx/coroutines/flow/MutableStateFlow;->setValue(Ljava/lang/Object;)V
+
+    .line 930
+    iget-object v2, v0, Lcom/laki/bonuscollector/ui/AppViewModel$submitTgLocal2Fa$1;->this$0:Lcom/laki/bonuscollector/ui/AppViewModel;
+
+    # getter for: Lcom/laki/bonuscollector/ui/AppViewModel;->_tgAccountId:Lkotlinx/coroutines/flow/MutableStateFlow;
+    invoke-static {v2}, Lcom/laki/bonuscollector/ui/AppViewModel;->access$get_tgAccountId$p(Lcom/laki/bonuscollector/ui/AppViewModel;)Lkotlinx/coroutines/flow/MutableStateFlow;
+
+    move-result-object v2
+
+    invoke-interface {v2, v9}, Lkotlinx/coroutines/flow/MutableStateFlow;->setValue(Ljava/lang/Object;)V
+
+    .line 931
+    iget-object v2, v0, Lcom/laki/bonuscollector/ui/AppViewModel$submitTgLocal2Fa$1;->this$0:Lcom/laki/bonuscollector/ui/AppViewModel;
+
+    # getter for: Lcom/laki/bonuscollector/ui/AppViewModel;->_tgPhone:Lkotlinx/coroutines/flow/MutableStateFlow;
+    invoke-static {v2}, Lcom/laki/bonuscollector/ui/AppViewModel;->access$get_tgPhone$p(Lcom/laki/bonuscollector/ui/AppViewModel;)Lkotlinx/coroutines/flow/MutableStateFlow;
+
+    move-result-object v2
+
+    invoke-interface {v2, v3}, Lkotlinx/coroutines/flow/MutableStateFlow;->setValue(Ljava/lang/Object;)V
+
+    .line 932
+    iget-object v2, v0, Lcom/laki/bonuscollector/ui/AppViewModel$submitTgLocal2Fa$1;->this$0:Lcom/laki/bonuscollector/ui/AppViewModel;
+
+    const-string v3, "\u2705 2FA \u0443\u0441\u043f\u0435\u0448\u043d\u043e! \u0421\u0435\u0441\u0441\u0438\u044f \u0441\u043e\u0445\u0440\u0430\u043d\u0435\u043d\u0430."
+
+    invoke-virtual {v2, v3}, Lcom/laki/bonuscollector/ui/AppViewModel;->notice(Ljava/lang/String;)V
+
+    .line 933
+    iget-object v2, v0, Lcom/laki/bonuscollector/ui/AppViewModel$submitTgLocal2Fa$1;->this$0:Lcom/laki/bonuscollector/ui/AppViewModel;
+
+    move-object v3, v0
+
+    check-cast v3, Lkotlin/coroutines/Continuation;
+
+    iput-object v9, v0, Lcom/laki/bonuscollector/ui/AppViewModel$submitTgLocal2Fa$1;->L$0:Ljava/lang/Object;
+
+    const/4 v4, 0x5
+
+    iput v4, v0, Lcom/laki/bonuscollector/ui/AppViewModel$submitTgLocal2Fa$1;->label:I
+
+    const/4 v4, 0x1
+
+    # invokes: Lcom/laki/bonuscollector/ui/AppViewModel;->doRefreshProfile(ZLkotlin/coroutines/Continuation;)Ljava/lang/Object;
+    invoke-static {v2, v4, v3}, Lcom/laki/bonuscollector/ui/AppViewModel;->access$doRefreshProfile(Lcom/laki/bonuscollector/ui/AppViewModel;ZLkotlin/coroutines/Continuation;)Ljava/lang/Object;
+
+    move-result-object v2
+
+    if-ne v2, v1, :cond_215
+
+    return-object v1
+
+    .line 935
+    :cond_1c8
+    iget-object v1, v0, Lcom/laki/bonuscollector/ui/AppViewModel$submitTgLocal2Fa$1;->this$0:Lcom/laki/bonuscollector/ui/AppViewModel;
+
+    const-string v2, "2FA \u0443\u0441\u043f\u0435\u0448\u043d\u043e, \u043d\u043e \u0441\u0435\u0441\u0441\u0438\u044f \u043d\u0435 \u043f\u043e\u043b\u0443\u0447\u0435\u043d\u0430."
+
+    invoke-virtual {v1, v2}, Lcom/laki/bonuscollector/ui/AppViewModel;->notice(Ljava/lang/String;)V
+
+    .line 936
+    iget-object v1, v0, Lcom/laki/bonuscollector/ui/AppViewModel$submitTgLocal2Fa$1;->this$0:Lcom/laki/bonuscollector/ui/AppViewModel;
+
+    # getter for: Lcom/laki/bonuscollector/ui/AppViewModel;->_tgAuthStep:Lkotlinx/coroutines/flow/MutableStateFlow;
+    invoke-static {v1}, Lcom/laki/bonuscollector/ui/AppViewModel;->access$get_tgAuthStep$p(Lcom/laki/bonuscollector/ui/AppViewModel;)Lkotlinx/coroutines/flow/MutableStateFlow;
+
+    move-result-object v1
+
+    sget-object v2, Lcom/laki/bonuscollector/auth/TgAuthStep;->None:Lcom/laki/bonuscollector/auth/TgAuthStep;
+
+    invoke-interface {v1, v2}, Lkotlinx/coroutines/flow/MutableStateFlow;->setValue(Ljava/lang/Object;)V
+
+    .line 937
+    iget-object v1, v0, Lcom/laki/bonuscollector/ui/AppViewModel$submitTgLocal2Fa$1;->this$0:Lcom/laki/bonuscollector/ui/AppViewModel;
+
+    # getter for: Lcom/laki/bonuscollector/ui/AppViewModel;->_tgAccountId:Lkotlinx/coroutines/flow/MutableStateFlow;
+    invoke-static {v1}, Lcom/laki/bonuscollector/ui/AppViewModel;->access$get_tgAccountId$p(Lcom/laki/bonuscollector/ui/AppViewModel;)Lkotlinx/coroutines/flow/MutableStateFlow;
+
+    move-result-object v1
+
+    invoke-interface {v1, v9}, Lkotlinx/coroutines/flow/MutableStateFlow;->setValue(Ljava/lang/Object;)V
+
+    .line 938
+    iget-object v1, v0, Lcom/laki/bonuscollector/ui/AppViewModel$submitTgLocal2Fa$1;->this$0:Lcom/laki/bonuscollector/ui/AppViewModel;
+
+    # getter for: Lcom/laki/bonuscollector/ui/AppViewModel;->_tgPhone:Lkotlinx/coroutines/flow/MutableStateFlow;
+    invoke-static {v1}, Lcom/laki/bonuscollector/ui/AppViewModel;->access$get_tgPhone$p(Lcom/laki/bonuscollector/ui/AppViewModel;)Lkotlinx/coroutines/flow/MutableStateFlow;
+
+    move-result-object v1
+
+    invoke-interface {v1, v3}, Lkotlinx/coroutines/flow/MutableStateFlow;->setValue(Ljava/lang/Object;)V
+
+    goto :goto_215
+
+    .line 940
+    :cond_1ed
+    invoke-static {v11}, Lkotlin/Result;->isFailure-impl(Ljava/lang/Object;)Z
+
+    move-result v1
+
+    if-eqz v1, :cond_215
+
+    .line 941
+    iget-object v1, v0, Lcom/laki/bonuscollector/ui/AppViewModel$submitTgLocal2Fa$1;->this$0:Lcom/laki/bonuscollector/ui/AppViewModel;
+
+    invoke-static {v11}, Lkotlin/Result;->exceptionOrNull-impl(Ljava/lang/Object;)Ljava/lang/Throwable;
+
+    move-result-object v2
+
+    if-eqz v2, :cond_201
+
+    invoke-virtual {v2}, Ljava/lang/Throwable;->getMessage()Ljava/lang/String;
+
+    move-result-object v2
+
+    if-nez v2, :cond_203
+
+    :cond_201
+    const-string v2, "\u043d\u0435\u0438\u0437\u0432\u0435\u0441\u0442\u043d\u0430\u044f"
+
+    :cond_203
+    new-instance v3, Ljava/lang/StringBuilder;
+
+    const-string v4, "\u041e\u0448\u0438\u0431\u043a\u0430 2FA: "
+
+    invoke-direct {v3, v4}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+
+    invoke-virtual {v3, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v2
+
+    invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v2
+
+    invoke-virtual {v1, v2}, Lcom/laki/bonuscollector/ui/AppViewModel;->notice(Ljava/lang/String;)V
+
+    .line 943
+    :cond_215
+    :goto_215
+    sget-object v1, Lkotlin/Unit;->INSTANCE:Lkotlin/Unit;
+
+    return-object v1
+.end method
