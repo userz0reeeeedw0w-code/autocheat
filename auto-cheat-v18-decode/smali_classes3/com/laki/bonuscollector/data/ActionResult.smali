@@ -1,0 +1,495 @@
+.class public final Lcom/laki/bonuscollector/data/ActionResult;
+.super Ljava/lang/Object;
+.source "AccountsRepository.kt"
+
+
+# annotations
+.annotation runtime Lkotlin/Metadata;
+    d1 = {
+        "\u0000&\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0000\n\u0002\u0010\t\n\u0002\u0008\u0004\n\u0002\u0010\u000b\n\u0002\u0008\u0012\n\u0002\u0010\u0008\n\u0000\n\u0002\u0010\u000e\n\u0000\u0008\u0087\u0008\u0018\u00002\u00020\u0001B/\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u0012\u0006\u0010\u0004\u001a\u00020\u0003\u0012\u0006\u0010\u0005\u001a\u00020\u0003\u0012\u0006\u0010\u0006\u001a\u00020\u0003\u0012\u0006\u0010\u0007\u001a\u00020\u0008\u00a2\u0006\u0004\u0008\t\u0010\nJ\t\u0010\u0012\u001a\u00020\u0003H\u00c6\u0003J\t\u0010\u0013\u001a\u00020\u0003H\u00c6\u0003J\t\u0010\u0014\u001a\u00020\u0003H\u00c6\u0003J\t\u0010\u0015\u001a\u00020\u0003H\u00c6\u0003J\t\u0010\u0016\u001a\u00020\u0008H\u00c6\u0003J;\u0010\u0017\u001a\u00020\u00002\u0008\u0008\u0002\u0010\u0002\u001a\u00020\u00032\u0008\u0008\u0002\u0010\u0004\u001a\u00020\u00032\u0008\u0008\u0002\u0010\u0005\u001a\u00020\u00032\u0008\u0008\u0002\u0010\u0006\u001a\u00020\u00032\u0008\u0008\u0002\u0010\u0007\u001a\u00020\u0008H\u00c6\u0001J\u0013\u0010\u0018\u001a\u00020\u00082\u0008\u0010\u0019\u001a\u0004\u0018\u00010\u0001H\u00d6\u0003J\t\u0010\u001a\u001a\u00020\u001bH\u00d6\u0001J\t\u0010\u001c\u001a\u00020\u001dH\u00d6\u0001R\u0011\u0010\u0002\u001a\u00020\u0003\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008\u000b\u0010\u000cR\u0011\u0010\u0004\u001a\u00020\u0003\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008\r\u0010\u000cR\u0011\u0010\u0005\u001a\u00020\u0003\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008\u000e\u0010\u000cR\u0011\u0010\u0006\u001a\u00020\u0003\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008\u000f\u0010\u000cR\u0011\u0010\u0007\u001a\u00020\u0008\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008\u0010\u0010\u0011\u00a8\u0006\u001e"
+    }
+    d2 = {
+        "Lcom/laki/bonuscollector/data/ActionResult;",
+        "",
+        "sum",
+        "",
+        "diff",
+        "beforeCoins",
+        "afterCoins",
+        "verified",
+        "",
+        "<init>",
+        "(JJJJZ)V",
+        "getSum",
+        "()J",
+        "getDiff",
+        "getBeforeCoins",
+        "getAfterCoins",
+        "getVerified",
+        "()Z",
+        "component1",
+        "component2",
+        "component3",
+        "component4",
+        "component5",
+        "copy",
+        "equals",
+        "other",
+        "hashCode",
+        "",
+        "toString",
+        "",
+        "app_release"
+    }
+    k = 0x1
+    mv = {
+        0x2,
+        0x0,
+        0x0
+    }
+    xi = 0x30
+.end annotation
+
+
+# static fields
+.field public static final $stable:I
+
+
+# instance fields
+.field private final afterCoins:J
+
+.field private final beforeCoins:J
+
+.field private final diff:J
+
+.field private final sum:J
+
+.field private final verified:Z
+
+
+# direct methods
+.method static constructor <clinit>()V
+    .locals 0
+
+    return-void
+.end method
+
+.method public constructor <init>(JJJJZ)V
+    .locals 0
+
+    .line 49
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 50
+    iput-wide p1, p0, Lcom/laki/bonuscollector/data/ActionResult;->sum:J
+
+    .line 51
+    iput-wide p3, p0, Lcom/laki/bonuscollector/data/ActionResult;->diff:J
+
+    .line 52
+    iput-wide p5, p0, Lcom/laki/bonuscollector/data/ActionResult;->beforeCoins:J
+
+    .line 53
+    iput-wide p7, p0, Lcom/laki/bonuscollector/data/ActionResult;->afterCoins:J
+
+    .line 54
+    iput-boolean p9, p0, Lcom/laki/bonuscollector/data/ActionResult;->verified:Z
+
+    return-void
+.end method
+
+.method public static synthetic copy$default(Lcom/laki/bonuscollector/data/ActionResult;JJJJZILjava/lang/Object;)Lcom/laki/bonuscollector/data/ActionResult;
+    .locals 10
+
+    move-object v0, p0
+
+    and-int/lit8 v1, p10, 0x1
+
+    if-eqz v1, :cond_0
+
+    iget-wide v1, v0, Lcom/laki/bonuscollector/data/ActionResult;->sum:J
+
+    goto :goto_0
+
+    :cond_0
+    move-wide v1, p1
+
+    :goto_0
+    and-int/lit8 v3, p10, 0x2
+
+    if-eqz v3, :cond_1
+
+    iget-wide v3, v0, Lcom/laki/bonuscollector/data/ActionResult;->diff:J
+
+    goto :goto_1
+
+    :cond_1
+    move-wide v3, p3
+
+    :goto_1
+    and-int/lit8 v5, p10, 0x4
+
+    if-eqz v5, :cond_2
+
+    iget-wide v5, v0, Lcom/laki/bonuscollector/data/ActionResult;->beforeCoins:J
+
+    goto :goto_2
+
+    :cond_2
+    move-wide v5, p5
+
+    :goto_2
+    and-int/lit8 v7, p10, 0x8
+
+    if-eqz v7, :cond_3
+
+    iget-wide v7, v0, Lcom/laki/bonuscollector/data/ActionResult;->afterCoins:J
+
+    goto :goto_3
+
+    :cond_3
+    move-wide/from16 v7, p7
+
+    :goto_3
+    and-int/lit8 v9, p10, 0x10
+
+    if-eqz v9, :cond_4
+
+    iget-boolean v9, v0, Lcom/laki/bonuscollector/data/ActionResult;->verified:Z
+
+    goto :goto_4
+
+    :cond_4
+    move/from16 v9, p9
+
+    :goto_4
+    move-wide p1, v1
+
+    move-wide p3, v3
+
+    move-wide p5, v5
+
+    move-wide/from16 p7, v7
+
+    move/from16 p9, v9
+
+    invoke-virtual/range {p0 .. p9}, Lcom/laki/bonuscollector/data/ActionResult;->copy(JJJJZ)Lcom/laki/bonuscollector/data/ActionResult;
+
+    move-result-object v0
+
+    return-object v0
+.end method
+
+
+# virtual methods
+.method public final component1()J
+    .locals 2
+
+    iget-wide v0, p0, Lcom/laki/bonuscollector/data/ActionResult;->sum:J
+
+    return-wide v0
+.end method
+
+.method public final component2()J
+    .locals 2
+
+    iget-wide v0, p0, Lcom/laki/bonuscollector/data/ActionResult;->diff:J
+
+    return-wide v0
+.end method
+
+.method public final component3()J
+    .locals 2
+
+    iget-wide v0, p0, Lcom/laki/bonuscollector/data/ActionResult;->beforeCoins:J
+
+    return-wide v0
+.end method
+
+.method public final component4()J
+    .locals 2
+
+    iget-wide v0, p0, Lcom/laki/bonuscollector/data/ActionResult;->afterCoins:J
+
+    return-wide v0
+.end method
+
+.method public final component5()Z
+    .locals 1
+
+    iget-boolean v0, p0, Lcom/laki/bonuscollector/data/ActionResult;->verified:Z
+
+    return v0
+.end method
+
+.method public final copy(JJJJZ)Lcom/laki/bonuscollector/data/ActionResult;
+    .locals 11
+
+    new-instance v10, Lcom/laki/bonuscollector/data/ActionResult;
+
+    move-object v0, v10
+
+    move-wide v1, p1
+
+    move-wide v3, p3
+
+    move-wide/from16 v5, p5
+
+    move-wide/from16 v7, p7
+
+    move/from16 v9, p9
+
+    invoke-direct/range {v0 .. v9}, Lcom/laki/bonuscollector/data/ActionResult;-><init>(JJJJZ)V
+
+    return-object v10
+.end method
+
+.method public equals(Ljava/lang/Object;)Z
+    .locals 7
+
+    const/4 v0, 0x1
+
+    if-ne p0, p1, :cond_0
+
+    return v0
+
+    :cond_0
+    instance-of v1, p1, Lcom/laki/bonuscollector/data/ActionResult;
+
+    const/4 v2, 0x0
+
+    if-nez v1, :cond_1
+
+    return v2
+
+    :cond_1
+    check-cast p1, Lcom/laki/bonuscollector/data/ActionResult;
+
+    iget-wide v3, p0, Lcom/laki/bonuscollector/data/ActionResult;->sum:J
+
+    iget-wide v5, p1, Lcom/laki/bonuscollector/data/ActionResult;->sum:J
+
+    cmp-long v1, v3, v5
+
+    if-eqz v1, :cond_2
+
+    return v2
+
+    :cond_2
+    iget-wide v3, p0, Lcom/laki/bonuscollector/data/ActionResult;->diff:J
+
+    iget-wide v5, p1, Lcom/laki/bonuscollector/data/ActionResult;->diff:J
+
+    cmp-long v1, v3, v5
+
+    if-eqz v1, :cond_3
+
+    return v2
+
+    :cond_3
+    iget-wide v3, p0, Lcom/laki/bonuscollector/data/ActionResult;->beforeCoins:J
+
+    iget-wide v5, p1, Lcom/laki/bonuscollector/data/ActionResult;->beforeCoins:J
+
+    cmp-long v1, v3, v5
+
+    if-eqz v1, :cond_4
+
+    return v2
+
+    :cond_4
+    iget-wide v3, p0, Lcom/laki/bonuscollector/data/ActionResult;->afterCoins:J
+
+    iget-wide v5, p1, Lcom/laki/bonuscollector/data/ActionResult;->afterCoins:J
+
+    cmp-long v1, v3, v5
+
+    if-eqz v1, :cond_5
+
+    return v2
+
+    :cond_5
+    iget-boolean v1, p0, Lcom/laki/bonuscollector/data/ActionResult;->verified:Z
+
+    iget-boolean p1, p1, Lcom/laki/bonuscollector/data/ActionResult;->verified:Z
+
+    if-eq v1, p1, :cond_6
+
+    return v2
+
+    :cond_6
+    return v0
+.end method
+
+.method public final getAfterCoins()J
+    .locals 2
+
+    .line 53
+    iget-wide v0, p0, Lcom/laki/bonuscollector/data/ActionResult;->afterCoins:J
+
+    return-wide v0
+.end method
+
+.method public final getBeforeCoins()J
+    .locals 2
+
+    .line 52
+    iget-wide v0, p0, Lcom/laki/bonuscollector/data/ActionResult;->beforeCoins:J
+
+    return-wide v0
+.end method
+
+.method public final getDiff()J
+    .locals 2
+
+    .line 51
+    iget-wide v0, p0, Lcom/laki/bonuscollector/data/ActionResult;->diff:J
+
+    return-wide v0
+.end method
+
+.method public final getSum()J
+    .locals 2
+
+    .line 50
+    iget-wide v0, p0, Lcom/laki/bonuscollector/data/ActionResult;->sum:J
+
+    return-wide v0
+.end method
+
+.method public final getVerified()Z
+    .locals 1
+
+    .line 54
+    iget-boolean v0, p0, Lcom/laki/bonuscollector/data/ActionResult;->verified:Z
+
+    return v0
+.end method
+
+.method public hashCode()I
+    .locals 3
+
+    iget-wide v0, p0, Lcom/laki/bonuscollector/data/ActionResult;->sum:J
+
+    invoke-static {v0, v1}, Ljava/lang/Long;->hashCode(J)I
+
+    move-result v0
+
+    mul-int/lit8 v0, v0, 0x1f
+
+    iget-wide v1, p0, Lcom/laki/bonuscollector/data/ActionResult;->diff:J
+
+    invoke-static {v1, v2}, Ljava/lang/Long;->hashCode(J)I
+
+    move-result v1
+
+    add-int/2addr v0, v1
+
+    mul-int/lit8 v0, v0, 0x1f
+
+    iget-wide v1, p0, Lcom/laki/bonuscollector/data/ActionResult;->beforeCoins:J
+
+    invoke-static {v1, v2}, Ljava/lang/Long;->hashCode(J)I
+
+    move-result v1
+
+    add-int/2addr v0, v1
+
+    mul-int/lit8 v0, v0, 0x1f
+
+    iget-wide v1, p0, Lcom/laki/bonuscollector/data/ActionResult;->afterCoins:J
+
+    invoke-static {v1, v2}, Ljava/lang/Long;->hashCode(J)I
+
+    move-result v1
+
+    add-int/2addr v0, v1
+
+    mul-int/lit8 v0, v0, 0x1f
+
+    iget-boolean v1, p0, Lcom/laki/bonuscollector/data/ActionResult;->verified:Z
+
+    invoke-static {v1}, Ljava/lang/Boolean;->hashCode(Z)I
+
+    move-result v1
+
+    add-int/2addr v0, v1
+
+    return v0
+.end method
+
+.method public toString()Ljava/lang/String;
+    .locals 11
+
+    iget-wide v0, p0, Lcom/laki/bonuscollector/data/ActionResult;->sum:J
+
+    iget-wide v2, p0, Lcom/laki/bonuscollector/data/ActionResult;->diff:J
+
+    iget-wide v4, p0, Lcom/laki/bonuscollector/data/ActionResult;->beforeCoins:J
+
+    iget-wide v6, p0, Lcom/laki/bonuscollector/data/ActionResult;->afterCoins:J
+
+    iget-boolean v8, p0, Lcom/laki/bonuscollector/data/ActionResult;->verified:Z
+
+    new-instance v9, Ljava/lang/StringBuilder;
+
+    const-string v10, "ActionResult(sum="
+
+    invoke-direct {v9, v10}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+
+    invoke-virtual {v9, v0, v1}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
+
+    move-result-object v0
+
+    const-string v1, ", diff="
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v0
+
+    invoke-virtual {v0, v2, v3}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
+
+    move-result-object v0
+
+    const-string v1, ", beforeCoins="
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v0
+
+    invoke-virtual {v0, v4, v5}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
+
+    move-result-object v0
+
+    const-string v1, ", afterCoins="
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v0
+
+    invoke-virtual {v0, v6, v7}, Ljava/lang/StringBuilder;->append(J)Ljava/lang/StringBuilder;
+
+    move-result-object v0
+
+    const-string v1, ", verified="
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v0
+
+    invoke-virtual {v0, v8}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
+
+    move-result-object v0
+
+    const-string v1, ")"
+
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v0
+
+    invoke-virtual {v0}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v0
+
+    return-object v0
+.end method
